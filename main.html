@@ -50,76 +50,62 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<h1>Job Application Form</h1>
-    <form action="/submit-job-application" method="POST">
-        <!-- Name Field -->
-        <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <!-- Email Field -->
-        <div class="form-group">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+  
+    <form action="/submit" method="post">
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
 
-        <!-- Gender Field -->
-        <div class="form-group radio-group">
-            <label>Gender *</label>
-            <label for="male">
-                <input type="radio" id="male" name="gender" value="male" required>
-                Male
-            </label>
-            <label for="female">
-                <input type="radio" id="female" name="gender" value="female" required>
-                Female
-            </label>
-            <label for="other">
-                <input type="radio" id="other" name="gender" value="other" required>
-                Other
-            </label>
-        </div>
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
 
-        <!-- Laptop Brands Field -->
-        <div class="form-group">
-            <label for="laptop">Laptop Brands</label>
-            <select id="laptop" name="laptop">
-                <option value="">Select a laptop brand</option>
-                <option value="Apple">Apple</option>
-                <option value="Asus">Asus</option>
-                <option value="HP">HP</option>
-            </select>
-        </div>
+    <!-- Gender -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label>
+    <br>
 
-        <!-- Age Field -->
-        <div class="form-group">
-            <label for="age">Age *</label>
-            <input type="number" id="age" name="age" required>
-        </div>
+    <!-- Laptop Brands -->
+    <label for="laptop">Laptop Brands:</label>
+    <select id="laptop" name="laptop">
+        <option value="">Select a brand</option>
+        <option value="apple">Apple</option>
+        <option value="asus">Asus</option>
+        <option value="hp">HP</option>
+    </select>
+    <br>
 
-        <!-- Date of Birth Field -->
-        <div class="form-group">
-            <label for="dob">Date of Birth *</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br>
 
-        <!-- Password Field -->
-        <div class="form-group">
-            <label for="password">Password *</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br>
 
-        <!-- Portfolio URL Field -->
-        <div class="form-group">
-            <label for="portfolio">Portfolio URL</label>
-            <input type="url" id="portfolio" name="portfolio">
-        </div>
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
 
-        <!-- Submit Button -->
-        <div class="form-group">
-            <button type="submit">Submit</button>
-        </div>
-    </form>
+    <!-- Portfolio URL -->
+    <label for="portfolio">Portfolio URL:</label>
+    <input type="url" id="portfolio" name="portfolio">
+    <br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+</form>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
